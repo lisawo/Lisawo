@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on A Hugo website</title>
+    <link>/categories/r/</link>
+    <description>Recent content in R on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>五一</title>
+      <link>/2019/06/30/%E4%BA%94%E4%B8%80/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/30/%E4%BA%94%E4%B8%80/</guid>
+      <description>今年的五一长假我没有去什么地方旅游
+只是在寝室学习写作业，睡睡觉、刷刷剧、看看书；
+在健身房锻炼身体；和朋友吃顿火锅，逛逛街。
+日子轻松而舒适。</description>
+    </item>
+    
+    <item>
+      <title>四月</title>
+      <link>/2019/05/30/%E5%9B%9B%E6%9C%88/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/30/%E5%9B%9B%E6%9C%88/</guid>
+      <description>我爱四月
+但是每年的四月的关键词就是忙碌和疲惫
+在死亡四月过去后，我的五一长假成为我漂流多日遇到的小岛，允许我上岸休息喘口气。</description>
+    </item>
+    
+  </channel>
+</rss>

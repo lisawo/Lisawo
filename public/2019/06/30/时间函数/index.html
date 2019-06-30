@@ -22,6 +22,11 @@
 
 
 
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
 <link rel="stylesheet" href="/css/fonts.css" media="all">
 <link rel="stylesheet" href="/css/main.css" media="all">
 
@@ -57,7 +62,7 @@
 
   <article class="article">
     
-    <span class="article-duration">0 min read</span>
+    <span class="article-duration">1 min read</span>
     
 
     <h1 class="article-title">时间函数</h1>
@@ -70,7 +75,18 @@
       
 
 
-
+<pre class="r"><code>library(lubridate)</code></pre>
+<pre><code>## 
+## 载入程辑包：&#39;lubridate&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:base&#39;:
+## 
+##     date</code></pre>
+<pre class="r"><code>lubridate::now()</code></pre>
+<pre><code>## [1] &quot;2019-06-30 23:11:22 CST&quot;</code></pre>
+<pre class="r"><code>d1 &lt;- ymd_hms(&quot;2000-01-01 0:0:0&quot;)
+d2 &lt;- ymd_hms(&quot;2000-01-02 12:0:5&quot;)
+di &lt;- d2 - d1; di</code></pre>
+<pre><code>## Time difference of 1.500058 days</code></pre>
 
     </div>
   </article>
@@ -93,6 +109,18 @@
 
     </div>
     
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
     
 

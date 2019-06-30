@@ -29,7 +29,7 @@
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/06/30/%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0/</guid>
-      <description></description>
+      <description>library(lubridate)## ## 载入程辑包：&amp;#39;lubridate&amp;#39;## The following object is masked from &amp;#39;package:base&amp;#39;:## ## datelubridate::now()## [1] &amp;quot;2019-06-30 23:11:22 CST&amp;quot;d1 &amp;lt;- ymd_hms(&amp;quot;2000-01-01 0:0:0&amp;quot;)d2 &amp;lt;- ymd_hms(&amp;quot;2000-01-02 12:0:5&amp;quot;)di &amp;lt;- d2 - d1; di## Time difference of 1.500058 days</description>
     </item>
     
     <item>

@@ -6,3 +6,14 @@ slug: 时间函数
 categories: []
 tags: []
 ---
+
+```{r}
+library(lubridate)
+lubridate::now()
+```
+```{r}
+d1 <- ymd_hms("2000-01-01 0:0:0")
+d2 <- ymd_hms("2000-01-02 12:0:5")
+di <- d2 - d1; di
+```
+

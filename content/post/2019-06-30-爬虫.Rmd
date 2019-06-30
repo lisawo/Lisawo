@@ -7,18 +7,26 @@ categories:
   - R
 tags: []
 ---
-
-library(rvest)
-url<-'http://www.gov.cn/premier/2017-03/16/content_5177940.htm'
 ```{r}
+library(rvest)
+library(xml2)
+```
+
+```{r}
+url<-'http://www.gov.cn/premier/2017-03/16/content_5177940.htm'
 web<-read_html(url,encoding="utf-8")
 position<-web %>% html_nodes("div.pages_content") %>% html_text()
+```
+
+```{r}
 library(jiebaR)
-engine_s<-worker(stop_word = "stopwords.txt")
+engine_s<-worker(stop_word = "C:/Users/jinyu/Documents/Lisawo/Lisawo/stopwords.txt")
 seg<-segment(position,engine_s)
 f<-freq(seg)
 f<-f[order(f[2],decreasing=TRUE),]
+```
 
+```{r}
 library(wordcloud2)
 f<-f[1:150,] 
 wordcloud2(f, size = 0.8 ,shape='star')

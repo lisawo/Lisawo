@@ -22,6 +22,11 @@
 
 
 
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
 <link rel="stylesheet" href="/css/fonts.css" media="all">
 <link rel="stylesheet" href="/css/main.css" media="all">
 
@@ -57,7 +62,7 @@
 
   <article class="article">
     
-    <span class="article-duration">0 min read</span>
+    <span class="article-duration">1 min read</span>
     
 
     <h1 class="article-title">爬虫！！</h1>
@@ -68,9 +73,30 @@
 
     <div class="article-content">
       
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="/rmarkdown-libs/wordcloud2/wordcloud.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/wordcloud2/wordcloud2-all.js"></script>
+<script src="/rmarkdown-libs/wordcloud2/hover.js"></script>
+<script src="/rmarkdown-libs/wordcloud2-binding/wordcloud2.js"></script>
 
 
-
+<pre class="r"><code>library(rvest)</code></pre>
+<pre><code>## 载入需要的程辑包：xml2</code></pre>
+<pre class="r"><code>library(xml2)</code></pre>
+<pre class="r"><code>url&lt;-&#39;http://www.gov.cn/premier/2017-03/16/content_5177940.htm&#39;
+web&lt;-read_html(url,encoding=&quot;utf-8&quot;)
+position&lt;-web %&gt;% html_nodes(&quot;div.pages_content&quot;) %&gt;% html_text()</code></pre>
+<pre class="r"><code>library(jiebaR)</code></pre>
+<pre><code>## 载入需要的程辑包：jiebaRD</code></pre>
+<pre class="r"><code>engine_s&lt;-worker(stop_word = &quot;C:/Users/jinyu/Documents/Lisawo/Lisawo/stopwords.txt&quot;)
+seg&lt;-segment(position,engine_s)
+f&lt;-freq(seg)
+f&lt;-f[order(f[2],decreasing=TRUE),]</code></pre>
+<pre class="r"><code>library(wordcloud2)
+f&lt;-f[1:150,] 
+wordcloud2(f, size = 0.8 ,shape=&#39;star&#39;)</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"word":["发展","改革","推进","建设","经济","推动","加快","政府","创新","完善","新","企业","提高","就业","中国","实施","支持","深化","工作","政策","服务","国家","人民","增长","制度","社会","群众","地区","好","农村","治理","稳定","机制","地方","保护","保障","合作","重点","市场","持续","投资","试点","消费","综合","落实","维护","领域","产能","教育","结构","加大","生态","改善","国内","我国","国际","使","城市","降低","强化","制定","提升","力度","引导","农业","增加","质量","文化","升级","标准","民生","下降","目标","依法","创业","作用","健康","战略","增强","生产","确保","进一步","国务院","核心","供给","规范","环境","收费","管理","生活","风险","科技","健全","监管","鼓励","世界","水平","资金","产业","一年","一批","能力","困难","体系","做好","经济社会","代表","行政","亿元","责任","区域","减少","全国","会议","贯彻","组织","体制改革","金融","超过","全球","3","技术","关系","扶贫","预期","优化","需求","发挥","特别","动能","专项","中央","制造","城镇","调控","现代化","协调","资源","党中央","习近平","5","特色","文明","新型","双","取消","生产总值","解决","新增","出台"],"freq":[125,68,65,54,52,42,40,39,36,35,35,35,32,31,31,31,29,29,29,28,27,26,26,25,25,25,24,22,21,20,19,19,19,19,18,18,17,17,17,17,16,16,16,16,16,15,15,15,15,15,15,14,14,14,14,14,14,14,13,13,13,13,13,13,13,13,13,12,12,12,12,12,12,12,12,12,12,12,12,12,11,11,11,11,11,11,11,11,11,11,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,9,9,9,9,9,9,9,9,9,9,9,9,9,9,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,7,7,7,7,7,7,7,7,7,7],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":1.152,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"star","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
 
     </div>
   </article>
@@ -94,7 +120,22 @@
     </div>
     
 
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
     
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 
     
   </body>

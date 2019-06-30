@@ -1,0 +1,23 @@
+---
+title: 画图
+author: 瑾瑜
+date: '2019-06-30'
+slug: 画图
+categories: []
+tags: []
+---
+```{r}
+library(ggplot2)
+require(ggplot2)
+data(diamonds)
+set.seed(42)
+small <- diamonds[sample(nrow(diamonds), 1000), ]
+head(small)
+p <- ggplot(data = small, mapping = aes(x = carat, y = price))
+p + geom_point()
+p <- ggplot(data=small, mapping=aes(x=carat, y=price, shape=cut)) 
+p+geom_point()
+p <- ggplot(data=small, mapping=aes(x=carat, y=price, shape=cut, colour=color))
+p+geom_point()
+```
+

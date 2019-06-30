@@ -24,6 +24,15 @@
     </item>
     
     <item>
+      <title>画图</title>
+      <link>/2019/06/30/%E7%94%BB%E5%9B%BE/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/30/%E7%94%BB%E5%9B%BE/</guid>
+      <description>library(ggplot2)require(ggplot2)data(diamonds)set.seed(42)small &amp;lt;- diamonds[sample(nrow(diamonds), 1000), ]head(small)## # A tibble: 6 x 10## carat cut color clarity depth table price x y z## &amp;lt;dbl&amp;gt; &amp;lt;ord&amp;gt; &amp;lt;ord&amp;gt; &amp;lt;ord&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;## 1 0.71 Very Good H SI1 62.5 60 2096 5.68 5.75 3.57## 2 0.79 Premium H SI1 61.8 59 2275 5.97 5.91 3.67## 3 1.03 Ideal F SI1 62.</description>
+    </item>
+    
+    <item>
       <title>爬虫！！</title>
       <link>/2019/06/28/%E7%88%AC%E8%99%AB/</link>
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>

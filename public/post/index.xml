@@ -6,21 +6,21 @@
     <description>Recent content in Posts on Lisa blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>五一</title>
-      <link>/2019/06/30/%E4%BA%94%E4%B8%80/</link>
-      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      <title>课程感悟</title>
+      <link>/2019/07/01/%E8%AF%BE%E7%A8%8B%E6%84%9F%E6%82%9F/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/06/30/%E4%BA%94%E4%B8%80/</guid>
-      <description>今年的五一长假我没有去什么地方旅游
-只是在寝室学习写作业，睡睡觉、刷刷剧、看看书；
-在健身房锻炼身体；和朋友吃顿火锅，逛逛街。
-日子轻松而舒适。</description>
+      <guid>/2019/07/01/%E8%AF%BE%E7%A8%8B%E6%84%9F%E6%82%9F/</guid>
+      <description>很幸运能够学习田老师讲授的互联网分析与治理，在这门课程中，真的收获到了很多“搞信息的”应该知道的知识和技能。从大数据与5G技术到物联网数据分析、空间、时间的数据分析都让我们了解了新的技术发展和现状，让我们对“信息”有了更深刻的认识。
+最让我们感到有挑战的是关于R的学习，因为以前没有接触过相似编程的语言，在学习R的过程中会有一点吃力。如果说学习R之前的课程是通向新知识的快捷门钥匙，那么学习R的课程则成为艰难而充满挑战的旅程。最痛苦的是频频爆错而不知道错在哪里的时候，同样最开心的瞬间在于点击运行后流畅而成功地操作。
+感谢老师精彩的课程和耐心的指导，在认清我们“信息专业”真实水平后，也没有放弃我们，虽然对R又爱又恨，但我们真的掌握了一个对我们学习工作生活终生有帮助的实用工具，我们以后也会继续探索学习R，发现R的魅力和强大作用。
+再次感谢亲爱的老师，真的很喜欢（崇拜）田老师，无论是授课方式还是言行举止，老师都是完美的。以后可能没有老师的课程了，但老师教授给我们的会一直影响我们。（比如小组作业我们现在都是用腾讯文档写了haha。）</description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@
     </item>
     
     <item>
-      <title>画图</title>
+      <title>钻石图</title>
       <link>/2019/06/30/%E7%94%BB%E5%9B%BE/</link>
       <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -59,6 +59,18 @@
       <description>我爱四月
 但是每年的四月的关键词就是忙碌和疲惫
 在死亡四月过去后，我的五一长假成为我漂流多日遇到的小岛，允许我上岸休息喘口气。</description>
+    </item>
+    
+    <item>
+      <title>一个简单的五一</title>
+      <link>/2019/05/03/%E4%BA%94%E4%B8%80/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/03/%E4%BA%94%E4%B8%80/</guid>
+      <description>今年的五一长假我没有去什么地方旅游
+只是在寝室学习写作业，睡睡觉、刷刷剧、看看书；
+在健身房锻炼身体；和朋友吃顿火锅，逛逛街。
+日子轻松而舒适。</description>
     </item>
     
   </channel>
